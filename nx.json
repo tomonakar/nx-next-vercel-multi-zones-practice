@@ -1,0 +1,43 @@
+{
+  "npmScope": "next-nx-vercel-practice",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "hello": {
+      "tags": []
+    },
+    "hello-e2e": {
+      "tags": [],
+      "implicitDependencies": ["hello"]
+    },
+    "good-by": {
+      "tags": []
+    },
+    "good-by-e2e": {
+      "tags": [],
+      "implicitDependencies": ["good-by"]
+    },
+    "ui": {
+      "tags": []
+    }
+  }
+}
