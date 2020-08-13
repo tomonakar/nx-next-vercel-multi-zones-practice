@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "BUILDING_FOR_NOW": "true"
+    }
+  },
+  "builds": [
+    { "src": "app/good-by/package.json", "use": "@now/next" },
+    { "src": "app/hello/package.json", "use": "@now/next" }
+  ],
+  "routes": [
+    { "src": "/good-by(.*)", "dest": "good-by/good-by$1" },
+    { "src": "(.*)", "dest": "home$1" }
+  ]
+}
