@@ -1,8 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "apps/good-by/package.json", "use": "@now/next" },
-    { "src": "apps/hello/package.json", "use": "@now/next" }
+    { "src": "./good-by/package.json", "use": "@now/next" },
+    { "src": "./hello/package.json", "use": "@now/next" }
   ],
   "routes": [
     { "src": "/hello(.*)", "dest": "hello$1" },
