@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ReactComponent as NxLogo } from '../public/nx-logo-white.svg';
 
 const StyledApp = styled.div`
   font-family: sans-serif;
@@ -140,7 +139,6 @@ export const Index = () => {
   return (
     <StyledApp>
       <header className="flex">
-        <NxLogo alt="" width="75" height="50" />
         <h1>Welcome to hello!</h1>
       </header>
       <main>
