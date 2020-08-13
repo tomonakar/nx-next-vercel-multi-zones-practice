@@ -7,6 +7,6 @@
   "routes": [
     { "src": "/hello(.*)", "dest": "hello$1" },
     { "src": "/good-by(.*)", "dest": "good-by$1" },
-    { "src": "/", "dest": "hello$1" }
+    { "src": "/", "dest": "index.html" }
   ]
 }
