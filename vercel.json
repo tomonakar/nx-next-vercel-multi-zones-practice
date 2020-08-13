@@ -5,7 +5,7 @@
     { "src": "apps/hello/package.json", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/hello(.*)", "dest": "home$1" },
-    { "src": "(.*)", "dest": "good-by$1" }
+    { "src": "../hello(.*)", "dest": "home$1" },
+    { "src": "../(.*)", "dest": "good-by$1" }
   ]
 }
